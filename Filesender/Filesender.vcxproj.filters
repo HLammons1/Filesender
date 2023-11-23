@@ -24,12 +24,18 @@
     <ClCompile Include="AES.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ConvertToBlocks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Filereader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AES.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertToBlocks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
