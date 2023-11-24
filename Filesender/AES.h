@@ -1,3 +1,8 @@
+/*
+https://github.com/SergeyBel/AES/blob/master/README.md
+*/
+
+
 #ifndef _AES_H_
 #define _AES_H_
 
