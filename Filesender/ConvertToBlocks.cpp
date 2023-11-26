@@ -39,3 +39,11 @@ int ConvertToBlocks::GetNumBlocks()
 {
 	return numBlocks;
 }
+
+std::unique_ptr<std::string> ConvertToBlocks::TextToMultipleOf16(std::unique_ptr<std::string> text) {
+	int paddingSize = 16 - text->size() % 16;
+	if (paddingSize != 16) {
+		text->append(paddingSize, '\0');
+	}
+	return text;
+}

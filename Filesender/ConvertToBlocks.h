@@ -12,6 +12,7 @@ private:
 	int numBytes = 0;
 public:
 	std::vector<std::unique_ptr<unsigned char[]>> TextToCharBlocks(std::unique_ptr<std::string> text);
+	std::unique_ptr<std::string> TextToMultipleOf16(std::unique_ptr<std::string> text);
 	void DetermineArraySize(std::unique_ptr<std::string> text);
 	int GetNumBlocks();
 };
