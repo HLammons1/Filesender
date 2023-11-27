@@ -30,6 +30,9 @@
     <ClCompile Include="testMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="notes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Filereader.h">

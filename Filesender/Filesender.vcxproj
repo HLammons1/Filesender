@@ -131,6 +131,7 @@
     <ClCompile Include="ConvertToBlocks.cpp" />
     <ClCompile Include="Filereader.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="notes.cpp" />
     <ClCompile Include="testMain.cpp" />
   </ItemGroup>
   <ItemGroup>
