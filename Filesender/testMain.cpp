@@ -5,6 +5,7 @@
 #include <cstring>
 #include "ConvertToBlocks.h"
 #include "Filereader.h"
+#include "SendFile.h"
 
 
 //int main() {
@@ -83,6 +84,9 @@ int main() {
     std::cout << "\nDecrypted: ";
     aes.printHexVector(decryptedData);
     std::cout << "\nString: " << result;
+
+    SendFile send("127.0.0.1", "8080");
+    send.Send(result);
 
     return 0;
 }
