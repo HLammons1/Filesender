@@ -1,6 +1,6 @@
 #include "SendFile.h"
 
-void SendFile::Send(const std::string data) {
+void SendFile::Send(const std::string& data) {
 	boost::asio::io_service io_service;
 	boost::asio::ip::tcp::resolver resolver(io_service);
 	boost::asio::ip::tcp::resolver::query query(server, port);
