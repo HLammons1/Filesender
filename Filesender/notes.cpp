@@ -23,4 +23,12 @@ https://beej.us/guide/bgnet/html/split/intro.html#intro
         exit(2);
     }
 
+}
+
+next steps are to find a way to send the key and the iv, then have the server
+have aes as well and use it to decode on the server.
+
+after that maybe use libssh2 key exchange method
+
+
 */

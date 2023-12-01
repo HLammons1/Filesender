@@ -133,13 +133,18 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="notes.cpp" />
     <ClCompile Include="SendFile.cpp" />
+    <ClCompile Include="SendManager.cpp" />
     <ClCompile Include="testMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AES.h" />
     <ClInclude Include="ConvertToBlocks.h" />
     <ClInclude Include="Filereader.h" />
+    <ClInclude Include="IConvertToBlocks.h" />
+    <ClInclude Include="IFilereader.h" />
+    <ClInclude Include="ISendFile.h" />
     <ClInclude Include="SendFile.h" />
+    <ClInclude Include="SendManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

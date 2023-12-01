@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{a4befd88-30e2-41b4-b750-488e241c35e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,6 +39,9 @@
     <ClCompile Include="SendFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SendManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Filereader.h">
@@ -49,6 +55,18 @@
     </ClInclude>
     <ClInclude Include="SendFile.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SendManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IFilereader.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IConvertToBlocks.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ISendFile.h">
+      <Filter>Interfaces</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

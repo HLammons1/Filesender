@@ -5,10 +5,11 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include "IFilereader.h"
 
 
 
-	class Filereader {
+	class Filereader : IFilereader {
 
 	private:
 

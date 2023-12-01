@@ -4,9 +4,9 @@
 #include <string>
 #include <memory>
 #include <vector>
+#include "IConvertToBlocks.h"
 
-class ConvertToBlocks
-{
+class ConvertToBlocks : IConvertToBlocks {
 private:
 	int numBlocks = 0;
 	int numBytes = 0;

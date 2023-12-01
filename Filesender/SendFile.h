@@ -4,8 +4,9 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include "ISendFile.h"
 
-class SendFile {
+class SendFile : ISendFile {
 private:
 	std::string server;
 	std::string port;
