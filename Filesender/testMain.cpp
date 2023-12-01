@@ -85,8 +85,8 @@ int main() {
     aes.printHexVector(decryptedData);
     std::cout << "\nString: " << result;
 
-    SendFile send("127.0.0.1", "8080");
-    send.Send(result);
+    //SendFile send("127.0.0.1", "8080");
+    //send.Send(result);
 
     return 0;
 }
