@@ -5,7 +5,8 @@
 
 class ISendFile {
 public:
-	virtual void Send(const std::string& data) = 0;
+	virtual ~ISendFile() = default;
+	virtual void  Send(const std::vector<std::vector<unsigned char>>& dataVec) = 0;
 };
 
 #endif

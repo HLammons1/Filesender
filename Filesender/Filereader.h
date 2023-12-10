@@ -9,12 +9,12 @@
 
 
 
-	class Filereader : IFilereader {
+	class Filereader : public IFilereader {
 
 	private:
 
 	public:
-		std::string ReturnFileString(std::string path);
+		std::string ReturnFileString(std::string path) override;
 		Filereader() = default;
 	};
 

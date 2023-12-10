@@ -5,6 +5,8 @@
 #include "IFilereader.h"
 #include "IConvertToBlocks.h"
 #include "ISendFile.h"
+#include "AES.h"
+
 
 class SendManager
 {
@@ -15,6 +17,7 @@ private:
 public:
 	SendManager(std::unique_ptr<IFilereader> fr, std::unique_ptr<IConvertToBlocks> cb, std::unique_ptr<ISendFile> sf)
 		: fileReader(std::move(fr)), converter(std::move(cb)), sendFile(std::move(sf)) {}
+	bool ManageSend(std::string);
 
 
 };

@@ -6,13 +6,13 @@
 #include <vector>
 #include "IConvertToBlocks.h"
 
-class ConvertToBlocks : IConvertToBlocks {
+class ConvertToBlocks : public IConvertToBlocks {
 private:
 	int numBlocks = 0;
 	int numBytes = 0;
 public:
-	std::vector<std::unique_ptr<unsigned char[]>> TextToCharBlocks(std::unique_ptr<std::string> text);
-	std::unique_ptr<std::string> TextToMultipleOf16(std::unique_ptr<std::string> text);
+	std::vector<std::unique_ptr<unsigned char[]>> TextToCharBlocks(std::unique_ptr<std::string> text) override;
+	std::unique_ptr<std::string> TextToMultipleOf16(std::unique_ptr<std::string> text) override;
 	void DetermineArraySize(std::unique_ptr<std::string> text);
 	int GetNumBlocks();
 };
